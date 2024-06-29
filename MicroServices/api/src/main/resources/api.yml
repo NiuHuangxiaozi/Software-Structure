@@ -1,0 +1,405 @@
+openapi: "3.0.0"
+info:
+  version: 1.0.0
+  title: Products
+  license:
+    name: MIT
+paths:
+  /products:
+    get:
+      summary: List all products
+      operationId: listProducts
+      tags:
+        - products
+      responses:
+        '200':
+          description: A paged array of products
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Products"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /products/{productId}:
+    get:
+      summary: Info for a specific product
+      operationId: showProductById
+      tags:
+        - product
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          description: The id of the product to retrieve
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Expected response to a valid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Product"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    patch:
+      summary: assign the  quantity of product
+      operationId: assignNumberOfProduct
+      tags:
+        - product
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          description: The id of the product to retrieve
+          schema:
+            type: string
+      requestBody:
+        description: the reduce number of the product
+        content:
+          'application/json':
+            schema:
+              type: string
+        required: true
+
+      responses:
+        '200':
+            description: 商品数量修改成功 
+        '400':
+            description: 商品数量修改失败
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error" 
+    put:
+      summary: change the number of product
+      operationId: changeNumberofProduct
+      tags:
+        - product
+      parameters:
+        - name: productId
+          in: path
+          required: true
+          description: The id of the product to product
+          schema:
+            type: string
+      requestBody:
+        description: the reduce number of the product
+        content:
+          'application/json':
+            schema:
+              type: string
+        required: true
+
+      responses:
+        '200':
+            description: 商品数量修改成功 
+        '400':
+            description: 商品数量修改失败
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error" 
+    
+          
+
+
+
+
+  #  在lab6实验中的order
+  /orders:
+    get:
+      summary: List all orders
+      operationId: listOrders
+      tags:
+        - orders
+      responses:
+        '200':
+          description: A paged array of orders
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/myOrders"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+  /orders/{orderId}:
+    delete:
+      summary: remove an ordeer from the orders
+      operationId: remomoveOrder
+      tags:
+        - orders
+      parameters:
+        - name: orderId
+          in: path
+          required: true
+          description: The id of the order
+          schema:
+            type: string
+      responses:
+        '200':
+            description: 订单删除成功
+        '400':
+            description: 订单删除失败
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error" 
+    put:
+      summary: change the state of order
+      operationId:  changeStateOfOrder
+      tags:
+        - orders
+      parameters:
+        - name: orderId
+          in: path
+          required: true
+          description: The id of the order
+          schema:
+            type: string
+      requestBody:
+        description: the new state of order
+        content:
+          'application/json':
+            schema:
+              type: string
+        required: true
+
+      responses:
+        '200':
+            description: 订单状态修改成功
+        '400':
+            description: 订单状态修改失败
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error" 
+    post:
+      summary:  add a new order tinto orders
+      operationId: addOrder
+      tags:
+        - orders
+      parameters:
+        - name: orderId
+          in: path
+          required: true
+          description: The id of the order
+          schema:
+            type: string
+      requestBody:
+        description: the new order
+        content:
+          'application/json':
+            schema:
+              type: string
+        required: true
+
+      responses:
+        '200':
+            description: 订单添加成功
+        '400':
+            description: 订单添加失败
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"   
+
+
+          
+
+  # settings的设置
+  /settings:
+    get:
+      summary: Get settings of the shop
+      description: know about details of the shop
+      operationId: getSettings
+      tags:
+        - Settings
+      responses:
+        '200':
+          description: expect details information of shop
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Settings"
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+  /categories:
+    get:
+      summary: Get categories of product
+      description: list all the categories of products
+      operationId: getCategories
+      tags:
+        - Category
+      responses:
+        '200':
+          description: get the categories of shop
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Categories"
+
+        default:
+          description: can not get categories of shop
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+
+
+
+
+
+
+
+  
+components:
+  schemas:
+
+    Product:
+      type: object
+      required:
+        - id
+        - name
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        price:
+          type: double
+        image:
+          type: string
+        stock:
+          type: integer
+          format: int32
+        quantity:
+          type: integer
+          format: int32
+          
+    Products:
+      type: array
+      items:
+        $ref: "#/components/schemas/Product"
+
+    Error:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
+
+    Settings:
+      type: array
+      items:
+        $ref: "#/components/schemas/Setting"
+    
+    Setting:
+      type: object
+      required:
+        - symbol
+      properties:
+        symbol:
+          type: string
+        charge_tax:
+          type: boolean
+        percentage:
+          type: integer
+          format: int32
+        img:
+          type: string
+        store:
+          type: string
+        address_one:
+          type: string
+        address_two:
+          type: string
+        contact:
+          type: string
+        footer:
+          type: string
+    
+    Categories:
+      type: array
+      items:
+        $ref: "#/components/schemas/Category"
+
+    Category:
+      type: object
+      required:
+        - _id
+        - name
+      properties:
+        _id:
+          type: integer
+          format: int32
+        name:
+          type: string
+    
+    
+
+
+
+
+
+    myOrder:
+      type: object
+      required:
+        - OrderId
+      properties:
+        orderId:
+          type: string
+        pay:
+          type: double
+        goods:
+          type: array
+          items: 
+            type: integer
+            format: int32
+        describe:
+          type: string
+        state:
+          type: string
+
+    myOrders:
+      type: array
+      items:
+        $ref: "#/components/schemas/myOrder"
+
+
+
+        
+

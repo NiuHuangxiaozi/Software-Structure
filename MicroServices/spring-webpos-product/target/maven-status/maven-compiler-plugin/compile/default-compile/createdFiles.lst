@@ -1,0 +1,11 @@
+com\example\webpos\WebPosApplication.class
+com\example\webpos\db\PosDB.class
+com\example\webpos\mapper\ProductMapper.class
+com\example\webpos\mapper\ProductMapperImpl.class
+com\example\webpos\controller\ProductsController.class
+com\example\webpos\biz\PosService.class
+com\example\webpos\repository\ProductRepository.class
+com\example\webpos\crosconfig\corsConfig.class
+com\example\webpos\db\PosInMemoryDB.class
+com\example\webpos\model\Product.class
+com\example\webpos\biz\PosServiceImp.class

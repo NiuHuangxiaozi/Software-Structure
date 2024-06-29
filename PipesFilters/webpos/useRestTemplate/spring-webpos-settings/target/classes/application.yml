@@ -1,0 +1,41 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/C:\D\Lesson\Software_structure\aw03;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: niu
+    password: 123
+    driverClassName: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
+  h2:
+    console:
+      enabled: true
+      path: /console
+      settings:
+        trace: false
+        web-allow-others: false
+  sql:
+    init:
+      platform: h2
+      mode: always
+
+  application:
+    name: setting-service
+
+server:
+  port: 4000
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+  instance:
+    # enable to register multiple app instances with a random server port
+    instance-id: ${spring.application.name}:${random.uuid}

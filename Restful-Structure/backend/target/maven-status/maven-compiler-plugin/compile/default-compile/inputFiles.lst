@@ -1,0 +1,17 @@
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\controller\CategoriesController.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\mapper\CategoryMapper.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\mapper\SettingMapper.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\model\Category.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\WebPosApplication.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\model\Product.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\mapper\ProductMapper.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\biz\PosService.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\repository\CategoryRepository.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\db\PosDB.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\model\Setting.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\repository\ProductRepository.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\biz\PosServiceImp.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\controller\SettingsController.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\controller\ProductsController.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\db\PosInMemoryDB.java
+C:\D\Lesson\Software_structure\aw4\aw04-NiuHuangxiaozi\backend\src\main\java\com\example\webpos\crosconfig\corsConfig.java

@@ -1,0 +1,10 @@
+com\example\webpos\controller\SettingsController.class
+com\example\webpos\WebPosApplication.class
+com\example\webpos\db\PosDB.class
+com\example\webpos\mapper\SettingMapper.class
+com\example\webpos\biz\PosService.class
+com\example\webpos\crosconfig\corsConfig.class
+com\example\webpos\db\PosInMemoryDB.class
+com\example\webpos\model\Setting.class
+com\example\webpos\biz\PosServiceImp.class
+com\example\webpos\mapper\SettingMapperImpl.class

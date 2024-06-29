@@ -1,0 +1,15 @@
+com\example\batch\model\Product.class
+com\example\batch\service\reviewItemProcessor.class
+com\example\batch\BatchApplication.class
+com\example\batch\testInput.class
+com\example\batch\config\ReviewConfig.class
+com\example\batch\config\PartitionConfig.class
+com\example\batch\config\BatchConfig.class
+com\example\batch\service\JsonFileItemReader.class
+com\example\batch\model\Review.class
+com\example\batch\service\ProductWriter.class
+com\example\batch\service\ProductProcessor.class
+com\example\batch\service\JsonReader.class
+com\example\batch\model\preProduct.class
+com\example\batch\service\reviewItemReader.class
+com\example\batch\model\preReview.class

@@ -1,0 +1,73 @@
+{
+  "product": [
+    {
+      "id": "1",
+      "_id": "1",
+      "price": "3",
+      "category": "drink",
+      "quantity": 16,
+      "name": "cola",
+      "stock": 1,
+      "img": "Cola.jpg",
+      "{\"quantity\":15}": ""
+    },
+    {
+      "id": "2",
+      "_id": "2",
+      "price": "4",
+      "category": "drink",
+      "quantity": 12,
+      "name": "sprite",
+      "stock": 1,
+      "img": "Sprite.png",
+      "{\"quantity\":11}": ""
+    },
+    {
+      "id": "3",
+      "_id": "3",
+      "price": "5",
+      "category": "drink",
+      "quantity": 5,
+      "name": "red bull",
+      "stock": 1,
+      "img": "Redbull.jpg"
+    },
+    {
+      "id": "4",
+      "_id": "4",
+      "price": "5",
+      "category": "drink",
+      "quantity": 5,
+      "name": "Milk",
+      "stock": 1,
+      "img": "Milk.jpg",
+      "{\"quantity\":4}": "",
+      "{\"quantity\":3}": ""
+    }
+  ],
+  "settings": [
+    {
+      "_id": 1,
+      "settings": {
+        "app": "Standalone Point of Sale",
+        "store": "Store-Pos",
+        "address_one": "10086",
+        "address_two": "10087",
+        "contact": "15968774896",
+        "tax": "",
+        "symbol": "$",
+        "percentage": "10",
+        "footer": "",
+        "img": ""
+      },
+      "id": "d36d"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1711853606",
+      "name": "drink",
+      "_id": 1711853606
+    }
+  ]
+}

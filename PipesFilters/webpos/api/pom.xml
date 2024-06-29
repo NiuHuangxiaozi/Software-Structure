@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+
+  <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.4</version>
+        <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+  <groupId>com.webapi</groupId>
+  <artifactId>lab6-webapi</artifactId>
+  <version>2.1</version>
+
+  <name>demo</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+        <dependency>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-web</artifactId>
+       </dependency>
+  </dependencies>
+
+  <build>
+      <plugins>
+        <plugin>
+          <groupId>org.openapitools</groupId>
+          <artifactId>openapi-generator-maven-plugin</artifactId>
+          <version>7.5.0</version>
+          <configuration>
+              <generatorName>spring</generatorName>
+              <library>spring-boot</library>
+              
+              <configOptions>
+                  <groupSameCtrlName>true</groupSameCtrlName>
+                  <interfaceOnly>true</interfaceOnly>
+                  <documentationProvider>springdoc</documentationProvider>
+              </configOptions>
+              <inputSpec>
+              ${project.basedir}/src/main/resources/api.yml
+              </inputSpec>
+              
+              <modelNameSuffix>Dto</modelNameSuffix>
+              
+              <generateModels>true</generateModels>
+              <generateApis>true</generateApis>
+
+              <apiPackage>com.example.webpos.controller.api</apiPackage>
+              <modelPackage>com.example.webpos.model.dto</modelPackage>
+
+
+          </configuration>
+        </plugin>
+  
+      </plugins>
+  </build>
+
+  
+</project>

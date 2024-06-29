@@ -1,0 +1,14 @@
+# Ignore JDBC Dependency
+# This demo puts 3 applicatons in the same project so they all pick up the
+# JDBC Depdendency, but this application doesn't need it.
+
+# Configure this Discovery Server
+eureka:
+  instance:
+    hostname: localhost
+  client:  # Not a client, don't register with yourself
+    registerWithEureka: false
+    fetchRegistry: false
+
+server:
+  port: 1111   # HTTP (Tomcat) port

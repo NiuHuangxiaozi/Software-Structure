@@ -1,0 +1,10 @@
+C:\D\Lesson\Software_structure\aw7\aw07-NiuHuangxiaozi\webpos\spring-webpos-product\src\main\java\com\example\webpos\model\Product.java
+C:\D\Lesson\Software_structure\aw7\aw07-NiuHuangxiaozi\webpos\spring-webpos-product\src\main\java\com\example\webpos\WebPosApplication.java
+C:\D\Lesson\Software_structure\aw7\aw07-NiuHuangxiaozi\webpos\spring-webpos-product\src\main\java\com\example\webpos\crosconfig\corsConfig.java
+C:\D\Lesson\Software_structure\aw7\aw07-NiuHuangxiaozi\webpos\spring-webpos-product\src\main\java\com\example\webpos\biz\PosServiceImp.java
+C:\D\Lesson\Software_structure\aw7\aw07-NiuHuangxiaozi\webpos\spring-webpos-product\src\main\java\com\example\webpos\controller\ProductsController.java
+C:\D\Lesson\Software_structure\aw7\aw07-NiuHuangxiaozi\webpos\spring-webpos-product\src\main\java\com\example\webpos\db\PosInMemoryDB.java
+C:\D\Lesson\Software_structure\aw7\aw07-NiuHuangxiaozi\webpos\spring-webpos-product\src\main\java\com\example\webpos\mapper\ProductMapper.java
+C:\D\Lesson\Software_structure\aw7\aw07-NiuHuangxiaozi\webpos\spring-webpos-product\src\main\java\com\example\webpos\db\PosDB.java
+C:\D\Lesson\Software_structure\aw7\aw07-NiuHuangxiaozi\webpos\spring-webpos-product\src\main\java\com\example\webpos\biz\PosService.java
+C:\D\Lesson\Software_structure\aw7\aw07-NiuHuangxiaozi\webpos\spring-webpos-product\src\main\java\com\example\webpos\repository\ProductRepository.java

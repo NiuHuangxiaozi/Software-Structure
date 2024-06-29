@@ -1,0 +1,11 @@
+com\example\webpos\controller\api\ApiUtil.class
+com\example\webpos\controller\api\ProductsApi.class
+com\example\webpos\model\dto\CategoryDto.class
+com\example\webpos\model\dto\ErrorDto.class
+com\example\webpos\model\dto\OrderitemDto.class
+com\example\webpos\model\dto\SettingDto.class
+com\example\webpos\controller\api\CategoriesApi.class
+com\example\webpos\model\dto\MyOrderDto.class
+com\example\webpos\controller\api\OrdersApi.class
+com\example\webpos\controller\api\SettingsApi.class
+com\example\webpos\model\dto\ProductDto.class
