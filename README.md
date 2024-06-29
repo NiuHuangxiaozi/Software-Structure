@@ -4,17 +4,17 @@
 
 # 1. Introduction
 
-​		Here are some initial concepts about software structure. Learn how to design a software architecture to better solve real-world problems and integrate popular algorithms into your program design.
-
-​		These designs will enhance your system's performance and robustness. While this repo may seem basic and even simplistic, it can serve as a great stepping stone for freshmen to complete more complex programs in the future.
-
-​		If you want to learn more, don't forget to subscribe to this channel:     [click here](https://space.bilibili.com/347527982/channel/seriesdetail?sid=408707)
-
 ------
+
+​		I tidy up my understanding about software architecture after attend the class A. Here are some initial concepts about software structure. Learn how to design a software architecture to better solve real-world problems and integrate popular algorithms into your program design. These designs will enhance your system's performance and robustness. While this repo may seem basic and even simplistic, it can serve as a great stepping stone for freshmen to complete more complex programs in the future. If you want to learn more, don't forget to subscribe to this channel:     [click here](https://space.bilibili.com/347527982/channel/seriesdetail?sid=408707)
 
 
 
 # 2. Navigation
+
+------
+
+
 
 1. 💉Ioc  
 
@@ -36,13 +36,12 @@
 
    
 
-   
-
-   ------
-
-   
 
 # 3. Environments
+
+------
+
+
 
 ### 3.1  [Java-17](https://www.openlogic.com/openjdk-downloads?field_java_parent_version_target_id=807&field_operating_system_target_id=436&field_architecture_target_id=391&field_java_package_target_id=396)
 
@@ -108,13 +107,13 @@ container:
 
 
 
-### 3.9 Haproxy
+### 3.9 [HAProxy](https://www.haproxy.org/#down)
 
-
+Load balance; Install  on Linux system
 
 ### 3.10 [Redis](https://redis.io/downloads/)
 
-Download on Linux system.
+Cache; Install on Linux system.
 
 ------
 
