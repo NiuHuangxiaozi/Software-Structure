@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.springframework.org/schema/beans
+          http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="cp437_9x16" class="asciiPanel.AsciiFont">
+        <constructor-arg name="filename" value="cp437_9x16.png" />
+        <constructor-arg name="width" value="9" />
+        <constructor-arg name="height" value="16" />
+    </bean>
+    
+    <bean id="panel" class="asciiPanel.AsciiPanel">
+        <constructor-arg name="width" value="80" />
+        <constructor-arg name="height" value="24" />
+        <constructor-arg name="font" ref="cp437_9x16" />
+    </bean>
+
+    <bean id="taffer_10x10" class="asciiPanel.AsciiFont">
+        <constructor-arg name="filename" value="taffer_10x10.png" />
+        <constructor-arg name="width" value="10" />
+        <constructor-arg name="height" value="10" />
+    </bean>
+    
+    <bean id="panel_2" class="asciiPanel.AsciiPanel">
+        <constructor-arg name="width" value="100" />
+        <constructor-arg name="height" value="36" />
+        <constructor-arg name="font" ref="taffer_10x10" />
+    </bean>
+</beans>
